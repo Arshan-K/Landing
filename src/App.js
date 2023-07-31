@@ -33,29 +33,27 @@ function App(){
 <h1 style={{fontSize:'100px'}}> OUR CLASSES </h1>
 <p style={{marginRight:'50px', float:'left', fontSize:'50px', display:'inline-block', textAlign:'left'}}> Our classes are for both ages. You can bring Yourself and <br/>child.Our classes are for both ages. You can bring <br/>Yourself and child.</p>
 
-<ul style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', marginRight: '200px' }}>
-  <li><a  className="Sup" href="/Men" style={{float:'right', fontSize:'50px', color:'black', marginRight:'700px'}}>Men <span style={{marginLeft:'400px'}}><ArrowOutwardIcon sx={{ fontSize: 80 }} /></span> </a></li>
-  <li><a  className="Sup" href="/Women" style={{float:'right', fontSize:'50px', color:'black', marginRight:'650px'}}>Women <span style={{marginLeft:'400px'}}><ArrowOutwardIcon  sx={{ fontSize: 80 }}/></span> </a></li>
-  <li><a  className="Sup" href="/Child" style={{float:'right', fontSize:'50px', color:'black', marginRight:'700px'}}>Child <span style={{marginLeft:'400px'}}><ArrowOutwardIcon  sx={{ fontSize: 80 }}/></span> </a></li>
+<ul style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', marginRight: '200px', position:'absolute', bottom:'-1100px', right:'500px' }}>
+  <li><a  className="Sup" href="/Men" style={{float:'right', fontSize:'50px', color:'black', marginRight:'700px', textDecoration:'none'}}>Men <span style={{marginLeft:'400px'}}><ArrowOutwardIcon sx={{ fontSize: 80 }} /></span> </a></li>
+  <li><a  className="Sup" href="/Women" style={{float:'right', fontSize:'50px', color:'black', marginRight:'650px', textDecoration:'none'}}>Women <span style={{marginLeft:'400px'}}><ArrowOutwardIcon  sx={{ fontSize: 80 }}/></span> </a></li>
+  <li><a  className="Sup" href="/Child" style={{float:'right', fontSize:'50px', color:'black', marginRight:'700px', textDecoration:'none'}}>Kids <span style={{marginLeft:'400px'}}><ArrowOutwardIcon  sx={{ fontSize: 80 }}/></span> </a></li>
 </ul>
 
-<div style={{ marginTop:'200px', textAlign:'center' }}>
-  <div style={{ display: 'flex', justifyContent: 'center' }}>
-    <div style={{ display: 'flex', marginRight: '200px' }}>
-      <img src={process.env.PUBLIC_URL + '/Body.png'} alt="Body" style={{ height:'600px', width:'600px', objectFit:'fill', border:'solid white', borderRadius:'10%' }}/>
+<div className="mid">
+  
+      <img src={process.env.PUBLIC_URL + '/Body.png'} alt="Body" style={{position:'absolute', height:'700px', width:'800px', objectFit:'fill', border:'solid white', borderRadius:'5%', left:'-100px', bottom:'-2000px' }}/>
       <a href="/link">
-        <img src={process.env.PUBLIC_URL + '/link.png'} alt="link" style={{ height:'600px', width:'2000px', objectFit:'fill', border:'solid black', borderRadius:'10%', padding:'0px' }}/>
+        <img src={process.env.PUBLIC_URL + '/link.png'} alt="link" style={{position:'absolute',right:'-100px', bottom:'-300px' , height:'700px', width:'1800px', objectFit:'fill', border:'solid black', borderRadius:'5%' }}/>
       </a>
-    </div>
-    </div>
-    <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px', marginLeft:'100px', marginRight:'100px' }}>
-    <div style={{ height: '600px', width: '600px',borderWidth:'5px' , border: 'solid black', borderRadius: '10%', backgroundColor: 'lightslategrey', fontSize: '100px', textAlign: 'center' }}>
+    
+    
+    <div style={{position:'absolute', height: '700px', width: '800px',borderWidth:'0px' , border: 'solid black', borderRadius: '5%', backgroundColor: 'lightslategrey', fontSize: '100px', textAlign: 'center', bottom:'-2800px', left:'200px' }}>
       Create and Personalize Your <span style={{ color: 'yellow' }}>Workout</span> routine.
     </div>
   
-    <img src={process.env.PUBLIC_URL + '/ok.png'} alt="ok" style={{ marginRight:'450px',height:'600px', width:'600px',borderWidth:'5px' , border:'solid black', borderRadius:'10%' }}/>
-    <img src={process.env.PUBLIC_URL + '/Done.png'} alt="Done" style={{  height:'600px', width:'600px',borderWidth:'5px' ,border:'solid black', borderRadius:'10%' }}/>
-  </div>
+    <img src={process.env.PUBLIC_URL + '/ok.png'} alt="ok" style={{ position:'absolute', bottom:'-2800px', left:'850px' , height:'700px', width:'800px',borderWidth:'0px' , border:'solid black', borderRadius:'5%' }}/>
+    <img src={process.env.PUBLIC_URL + '/Done.png'} alt="Done" style={{ position:'absolute', bottom:'-2800px',left:'1800px', height:'700px', width:'800px',borderWidth:'0px' ,border:'solid black', borderRadius:'5%' }}/>
+  
 </div>
 
 
@@ -164,8 +162,18 @@ function App(){
 </div>
 
 
-<div>
+<div >
 <img src={process.env.PUBLIC_URL + '/table.png'} alt="table" style={{height:'1200px', width:'2400px', marginTop:'100px', marginLeft:'450px', border:'solid black', borderRadius:'5%', borderWidth:'5px', objectFit:'fill'}}/>
+
+{/* <div className='table-container' >
+
+<h1 style={{position:'absolute', top:'100px', left:'100px', fontSize:'80px', color:'white'}}>GYMGO</h1>
+<table>
+<tc>
+  <td style={{color:'yellow'}}>MAKE YOUR BODY STRONGER THEN YESTERDAY</td>
+</tc>
+</table> */}
+
 </div>
 
 

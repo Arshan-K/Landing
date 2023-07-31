@@ -61,6 +61,12 @@ color: black;
    border-radius: 5%;
    object-fit: fill;
   }
+
+.mid{
+  padding: 1000px;
+  
+}
+
   .Sup{
     border-bottom: solid gray;
     margin-top: 100px;
